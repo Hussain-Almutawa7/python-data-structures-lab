@@ -56,7 +56,7 @@ print('Exercise 2:', combine_foods())
 
 def slice_foods():
     # your code here
-    foods = ["Pizza", "Chicken", "Burger"]
+    foods = ("Pizza", "Chicken", "Burger")
     last_two_foods = (foods[-2:])
     
     return last_two_foods
@@ -71,17 +71,12 @@ print('Exercise 3:', slice_foods())
 def hometown_info():
     # your code here
     home_town = {
-        "hamad-town" : {
-            "state": "nothing",
-            "population": 2000
-        }
+        "city" : "hamad town",
+        "state": "nothing",
+        "population" : 2000
     }
     
-    city = ""
-    for key in home_town:
-        city = key
-    
-    home_town_message = f"I was born in {city}, {home_town['hamad-town']["state"]}, - population of {home_town['hamad-town']["population"]}"
+    home_town_message = f"I was born in {home_town['city']}, {home_town["state"]} - population pf {home_town['population']}"
     
     return home_town_message
 # Call the function and print the result
@@ -96,11 +91,10 @@ print('Exercise 4:', hometown_info())
 def list_home_town_items():
     # your code here
     home_town = {
-        "hamad-town" : {
+            "city" : "hamad town",
             "state": "nothing",
-            "population": 2000
+            "population" : 2000
         }
-    }
     
     home_town_items = []
     
@@ -110,3 +104,5 @@ def list_home_town_items():
     return home_town_items
 # Call the function and print the result
 print('Exercise 5:', list_home_town_items())
+
+
